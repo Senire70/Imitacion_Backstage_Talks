@@ -1,110 +1,333 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
-  padding: 1em;
-  font-family: "Roboto", sans-serif;
-/* Temporal, para poder visualizar todos los elementos */
-  background-color: blueviolet;
+.footer2 {
+  display: none;
+}
+@media screen and (min-width: 1081px) {
+  body {
+    margin: 0;
+    padding: 0 1em;
+    font-family: "Roboto", sans-serif;
+    /* Temporal, para poder visualizar todos los elementos */
+    background-color: blueviolet;
+  }
+
+  /* Posicionamiento */
+  .izquierda {
+    position: fixed;
+    top: 1.3em;
+    left: 1em;
+    width: 30%;
+  }
+  .izquierda img {
+    width: 62.5%;
+  }
+  footer {
+    position: fixed;
+    left: 1.5em;
+    bottom: 0.2em;
+    width: 25%;
+  }
+  .centro {
+    margin: 0 auto;
+    width: 34%;
+  }
+  .elemento img {
+    width: 100%;
+  }
+  .derecha {
+    position: fixed;
+    top: 1.3em;
+    right: 1em;
+    width: 30%;
+  }
+  .arriba {
+    text-align: left;
+    position: fixed;
+    top: 1.5em;
+    right: 1em;
+  }
+  .abajo {
+    position: fixed;
+    display: flex;
+    right: 1em;
+    bottom: 1.5em;
+    flex-direction: column;
+  }
+  /* Fin posicionamiento */
+
+  /* Estilos */
+  .copyright {
+    font-size: 0.8em;
+  }
+  .copyright a {
+    font-size: 1em;
+    color: black;
+  }
+  .privacy a {
+    color: black;
+    font-size: 1.2em;
+  }
+  .descripcion {
+    font-size: 1.14em;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 0;
+    width: 18em;
+  }
+  .copyright {
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+  }
+  .izquierda a:hover {
+    text-decoration: none;
+  }
+  .elemento {
+    width: 100%;
+  }
+  .menu_img {
+    width: 100%;
+    margin-bottom: 5em;
+    text-align: center;
+    font-weight: bold;
+  }
+  .linea {
+    text-align: center;
+    margin-bottom: 1.1em;
+  }
+  .linea a {
+    font-size: 0.9em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .linea1 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .correo a {
+    display: block;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .derecha .abajo a {
+    margin-top: 0.3em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+  }
+  .centro a:hover,
+  .derecha a:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 1080px) {
+  body {
+    padding: 0.8em 1em 0 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* Temporal, para poder visualizar todos los elementos */
+    background-color: blueviolet;
+  }
+
+  /* Posicionamiento */
+  .izquierda {
+    position: relative;
+    width: 30%;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .centro {
+    width: 47%;
+    margin-bottom: 12em;
+    margin-top: 0.8em;
+  }
+  .centro > div {
+    width: 100%;
+  }
+  .centro div {
+    text-align: center;
+  }
+  .centro img {
+    width: 100%;
+  }
+  .menu_img {
+    margin-bottom: 5em;
+    font-weight: bold;
+  }
+  .derecha {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .arriba {
+    text-align: right;
+    margin-bottom: 1em;
+  }
+  .derecha .abajo {
+    display: none;
+  }
+  /* Fin posicionamiento */
+
+  /* Estilos */
+  .izquierda img {
+    width: 97%;
+    margin-left: 0.5em;
+  }
+  footer {
+    margin-left: 0.5em;
+  }
+  .descripcion {
+    font-size: 1.2em;
+    width: 110%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3em;
+    font-weight: 700;
+  }
+  .copyright {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0.5em 0 2.3em;
+  }
+  .izquierda a {
+    color: black;
+  }
+  .izquierda a:hover {
+    text-decoration: none;
+  }
+  .privacy a {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  .linea {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+  }
+  .linea1 {
+    font-size: 1.2em;
+  }
+  .linea2 {
+    font-size: 1.5em;
+  }
+  .centro a {
+    color: white;
+    text-decoration: none;
+  }
+  .centro a:hover {
+    text-decoration: underline;
+  }
+  .derecha a {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .derecha a:hover {
+    text-decoration: underline;
+  }
 }
 
-/* Posicionamiento */
-.principal {
-  width: 33%;
-}
-.izquierda {
-  position: fixed;
-  top: 1.3em;
-  left: 1em;
-}
-.izquierda img {
-  width: 16.19em;
-}
-footer {
-  position: fixed;
-  left: 1.5em;
-  bottom: 0.2em;
-  width: 20em;
-}
-.centro {
-  margin: 0 auto;
-}
-.elemento img {
-  width: 26.3em;
-}
-.derecha {
-  position: fixed;
-  top: 1.3em;
-  right: 1em;
-}
-.arriba {
-  text-align: left;
-  position: fixed;
-  top: 1.5em;
-  right: 1em;
-}
-.abajo {
-  position: fixed;
-  display: flex;
-  right: 1em;
-  bottom: 1.5em;
-  flex-direction: column;
-}
-/* Fin posicionamiento */
+@media screen and (max-width: 780px) {
+  .footer1 {
+    display: none;
+  }
+  .footer2 {
+    display: block;
+  }
+  body {
+    margin: 1.4em 1em;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    /* Temporal, para poder visualizar todos los elementos */
+    background-color: blueviolet;
+  }
+  .izquierda img{
+    width: 10em;
+  }
+  .elemento{
+    text-align: center;
+    width: 100%;
+  }
+  .elemento img{
+    width: 87.9%;
+    margin-top: 2.3em;
+  }
+  .menu_img{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8em;
+  }
+  .linea{
+    display: block;
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+  }
+  .linea1{
+    font-size: 1.1em;
+  }
+  .linea2{
+    font-size: 1.5em;
+  }
+  .centro a{
+    color: white;
+    text-decoration: none;
+  }
+  .centro a:hover{
+    text-decoration: underline;
+  }
 
-/* Estilos */
-.copyright {
-  font-size: 0.8em;
-}
-.copyright a {
-  font-size: 1em;
-  color: black;
-}
-.privacy a {
-  color: black;
-  font-size: 1.2em;
-}
-.descripcion {
-  font-size: 1.15em;
-  font-weight: 700;
-  line-height: 1.3em;
-  margin-bottom: 0;
-}
-.copyright {
-  margin-top: 0.5em;
-  margin-bottom: 2.5em;
-}
-.izquierda a:hover {
-  text-decoration: none;
-}
-.menu_img {
-  margin-bottom: 5em;
-}
-.linea {
-  text-align: center;
-  margin-bottom: 1.1em;
-}
-.linea a {
-  font-size: 0.9em;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.linea1 {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.correo a {
-  color: black;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-}
-.derecha .abajo a {
-  margin-top: 0.3em;
-  text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-}
-.centro a:hover,
-.derecha a:hover {
-  text-decoration: underline;
+  .derecha .abajo{
+    display: none;
+  }
+  footer{
+    text-align: center;
+    margin-bottom: 3.38em;
+  }
+  .descripcion{
+    font-weight: bold;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+  }
+  .copyright{
+    margin: 0.75em 0 2.75em 0;
+    font-size: 0.75em;
+  }
+  .privacy{
+    margin: 0;
+    padding: 0;
+    font-size: 1.15em;
+  }
+  footer a{
+    color: black;
+  }
+  footer a:hover{
+    text-decoration: none;
+  }
+  .correo{
+    text-align: center;
+    margin-bottom: 3.26em;
+  }
+  .correo a{
+    color: black;
+    font-size: 1.13em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .correo a:hover{
+    text-decoration: underline;
+  }
 }
